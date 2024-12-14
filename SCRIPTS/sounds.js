@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const soundContainer = document.getElementById('sounds-container');
 
     // Fetch sound data from backend
-    fetch('http://localhost:5000/api/sounds') // Adjust the endpoint as needed
+    fetch('https://backend-l7x9.onrender.com/api/sounds') // Adjust the endpoint as needed
         .then(response => response.json())
         .then(data => {
             const { sounds } = data;
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sounds.slice(0,5).forEach(sound => {
                 const soundItem = document.createElement('div');
                 soundItem.className = 'sound-item';
-                const audioSrc = `http://localhost:5000${sound.filePath}`; // Construct the audio src URL
+                const audioSrc = `https://backend-l7x9.onrender.com${sound.filePath}`; // Construct the audio src URL
 
                 soundItem.innerHTML = `
                     <div class="top">
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <button>ADD</button>
                         </div>
                         <div class="sound-img">
-                            <img src="http://localhost:5000${sound.imagePath}" alt="${sound.name}" />
+                            <img src="https://backend-l7x9.onrender.com${sound.imagePath}" alt="${sound.name}" />
                         </div>
                     </div>
                     <div class="middle">
