@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Playfair Display";
+    
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../IMAGES/REGISTER_LOGIN/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+
+}
+.container h1{
+    color: #2d2d49;
+    font-size: 3rem;
+    letter-spacing: 0.5ch;
+    font-weight: 100;
+
+}
+.container .login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .login-form input{
+    width: 550px;
+    height: 40px;
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    
+    
+}
+
+.container .login-form button{
+    width: 550px;
+    height: 40px;
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    background-color:#a9ade9 ;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1ch;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

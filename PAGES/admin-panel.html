@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Add Sounds</title>
+    <link rel="stylesheet" href="../CSS/admin-panel.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add Sounds</h1>
+        <form id="add-sound-form" enctype="multipart/form-data">
+            <label for="mp3">MP3 File:</label>
+            <input type="file" id="mp3" name="mp3" accept=".mp3" required>
+
+            <label for="image">Image File:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <label for="tags">Tags (comma separated):</label>
+            <input type="text" id="tags" name="tags">
+
+            <button type="submit">Add Sound</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        document.getElementById('add-sound-form').addEventListener('submit', async (event) => {
+            event.preventDefault(); // Prevent the default form submission
+        
+            const formData = new FormData();
+            formData.append('mp3', document.getElementById('mp3').files[0]);
+            formData.append('image', document.getElementById('image').files[0]);
+            formData.append('description', document.getElementById('description').value);
+            formData.append('tags', document.getElementById('tags').value.split(',').map(tag => tag.trim()));
+
+            const response  = await fetch("",
+            {
+                method: 'POST',
+                headers : {
+                    'Content-Type': 'application/json'
+                },
+                body: formData
+            });
+            }
+            )
+        
+        
+    </script>
+</body>
+</html>

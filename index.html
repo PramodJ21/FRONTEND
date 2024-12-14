@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&family=Montserrat:wght@600&family=Poppins:wght@600&family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Soundscape</h1>
+        </div>
+        <nav>
+            <div class="sounds-link">
+                <a href="#sounds">Sounds</a>
+            </div>
+            <div class="recommendations-link">
+                <a href="#recommendations">Recommendations</a>
+            </div>
+            <div class="playlist-link">
+                <a href="#playlist">Playlist</a>
+            </div>
+            <div class="todolist-link">
+                <a href="#todolist">To-Do List</a>
+            </div>
+            
+            <div class="soundtherapy-link">
+                <a href="#soundtherapy">Soundtherapy</a>
+            </div>
+            <div class="about-link">
+                <a href="#about">About</a>
+            </div>
+        </nav>
+        <div class="profile">
+            <h1>Profile</h1>
+        </div>
+    </header>
+    <div class="header-spacer"></div>
+    <main>
+        <div id="home">
+            
+            <div class="home-content darkshade">
+                <div class="heading">
+                    <h1>Sounds Surrounds us</h1>
+                    <h1>Listen, Every rustle is Important</h1>
+                </div>
+                    <div class="carousel">
+                        <div class="carousel-item" ><p>MIX NUMBER</p></div>
+                        <div class="carousel-item" ><p>MIX NUMBER</p></div>
+                        <div class="carousel-item "><p>MIX NUMBER</p></div> <!-- Default active -->
+                        <div class="carousel-item" ><p>MIX NUMBER</p></div>
+                        <div class="carousel-item"><p>MIX NUMBER</p></div>
+                    </div>
+                    <h2 class="recently-played">Recently Played</h2>
+
+        <div class="controls">
+            <div class="timer">
+                <span>00:00</span>
+                <input type="range" min="0" max="100" value="0">
+                <span>04:00</span>
+            </div>
+
+            <div class="volume-bar">
+                <label for="volume">Volume</label>
+                <input type="range" id="volume" min="0" max="100" value="50">
+            </div>
+
+            <button class="new-mix">New Mix</button>
+            </div>
+        </div>
+            
+        </div>
+        <div id="sounds">
+            <div class="sounds-header">
+                <h2>Sounds</h2>
+                <button class="see-all">See All</button>
+            </div>
+            <div id="sounds-container" class="sounds-container">
+               
+            </div>
+        </div>
+        <div id="playlist-recommendations">
+            <div class="darkshade">
+                <div id="recommendations">
+                    <div class="recommendation-carousel-wrapper">
+                        <button class="recommendation-carousel-control recommendation-prev" id="prevBtn">&lt;</button>
+                        <div class="recommendation-carousel">
+                            <div class="recommendation-carousel-item">Recommendation 1</div>
+                            <div class="recommendation-carousel-item">Recommendation 2</div>
+                            <div class="recommendation-carousel-item">Recommendation 3</div>
+                            <div class="recommendation-carousel-item">Recommendation 4</div>
+                            <div class="recommendation-carousel-item">Recommendation 5</div>
+                            <div class="recommendation-carousel-item">Recommendation 6</div>
+                        </div>
+                        <button class="recommendation-carousel-control recommendation-next" id="nextBtn">&gt;</button>
+                    </div>
+                </div>
+                
+                
+                
+                <div id="playlist">
+                    <div class="playlist-container">
+                        <div class="playlist-new">
+                            <div class="playlist-circle">+</div>
+                            <h3>New Playlist</h3>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-circle">
+                                <img src="./IMAGES/carousel_bg/mix_bg2.jpeg" alt="Playlist 1">
+                            </div>
+                            <h3>Playlist 1</h3>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-circle">
+                                <img src="./IMAGES/carousel_bg/mix_bg2.jpeg" alt="Playlist 2">
+                            </div>
+                            <h3>Playlist 2</h3>
+                        </div>
+                        <div class="playlist-item">
+                            <div class="playlist-circle">
+                                <img src="./IMAGES/carousel_bg/mix_bg2.jpeg" alt="Playlist 3">
+                            </div>
+                            <h3>Playlist 3</h3>
+                        </div>
+                        <button class="playlist-see-all">See All</button>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div id="todolist">
+                    <div class="todolist-container">
+                        <h2>To-Do List</h2>
+                        <div class="todolist-input">
+                            <input type="text" id="new-task" placeholder="Add a new task...">
+                            <button id="add-task">Add Task</button>
+                        </div>
+                        <ul id="task-list"></ul>
+                        <button id="save-tasks">Save Tasks</button>
+                    </div>
+                </div>
+                
+        <div id="soundtherapy-about">
+            <div class="darkshade">
+                <div id="soundtherapy">
+                    <div class="therapy-header">
+                        <h2>Sound Therapy</h2>
+                        <p>
+                            Sound therapy is a healing practice that uses different aspects of sound to improve emotional, psychological, and physical well-being. It involves the use of music, voice, tuning forks, and singing bowls to restore balance and reduce stress. By tuning into various sound frequencies, the human mind and body can experience deep relaxation, improved sleep, and enhanced mood.
+                        </p>
+                    </div>
+                    
+                    <div class="therapy-centers">
+                        <h3>Nearby Sound Therapy Centers in Mumbai</h3>
+                        <div class="center-list">
+                            <div class="center-item">
+                                <h4>1. Naad Wellness Studio</h4>
+                                <p>Located in Bandra, Naad Wellness Studio offers therapeutic sessions with Tibetan bowls and gongs, focusing on holistic well-being.</p>
+                                <button class="show-location" data-lat="19.059" data-lng="72.830">Show Location</button>
+                            </div>
+                            
+                            <div class="center-item">
+                                <h4>2. Anahata Sound Healing</h4>
+                                <p>Anahata Sound Healing in Juhu specializes in meditation and chakra healing through sound, using instruments like the monochord and singing bowls.</p>
+                                <button class="show-location" data-lat="19.104" data-lng="72.826">Show Location</button>
+                            </div>
+                            
+                            <div class="center-item">
+                                <h4>3. Inner Space Healing</h4>
+                                <p>Based in Andheri, Inner Space Healing focuses on sound baths and group meditation sessions that promote relaxation and inner peace.</p>
+                                <button class="show-location" data-lat="19.123" data-lng="72.836">Show Location</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="map"></div>
+                </div>
+                
+            <div id="about"></div>
+            </div>
+            
+        </div>
+        
+        
+    </main>
+    <footer>
+        <div class="current-details">
+            <img src="path_to_image" alt="Current Song Image" class="current-image">
+            <span class="current-name">Song/Mix/Playlist Name</span>
+        </div>
+        <div class="current-controls">
+            <button id="prev"><i class="fas fa-step-backward"></i></button>
+            <button id="pause"><i class="fas fa-pause"></i></button>
+            <button id="next"><i class="fas fa-step-forward"></i></button>
+        </div>
+        <div class="add-sounds">
+            <button id="add-to-queue"><i class="fas fa-plus"></i> Add to Queue</button>
+        </div>
+    </footer>
+    
+    <script src="./SCRIPTS/index.js"></script>
+    <script src="./SCRIPTS/recommendations.js"></script>
+    <script src="./SCRIPTS/todolist.js"></script>
+    <script src="./SCRIPTS/sounds.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display";
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../IMAGES/REGISTER_LOGIN/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    padding: 20px; /* Add padding to prevent content from touching edges */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Reduced gap for a tighter look */
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.container h1 {
+    color: #2d2d49;
+    font-size: 3rem;
+    letter-spacing: 0.3ch; /* Reduced letter spacing for better readability */
+    font-weight: 100;
+    margin-bottom: 20px; /* Add margin to create separation */
+}
+
+.container .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduced gap for a more compact form */
+}
+
+.container .register-form input {
+    width: 500px; /* Adjusted width for better alignment */
+    height: 45px; /* Slightly increased height for better usability */
+    border: none;
+    padding: 10px 15px; /* Adjusted padding for balanced appearance */
+    text-transform: uppercase;
+    border-radius: 5px; /* Add rounded corners for a softer look */
+}
+
+.container .register-form button {
+    width: 500px; /* Matches input width */
+    height: 45px; /* Matches input height */
+    border: none;
+    padding: 10px 15px; /* Consistent padding with input */
+    text-transform: uppercase;
+    background-color: #a9ade9;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5ch; /* Reduced letter spacing for better readability */
+    cursor: pointer;
+    border-radius: 5px; /* Add rounded corners to match inputs */
+    transition: background-color 0.3s ease; /* Add smooth hover effect */
+}
+
+.container .register-form button:hover {
+    background-color: #8a91e2; /* Slightly darker color on hover */
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -5px; /* Slightly reduced negative margin for balance */
+    margin-bottom: 5px; /* Reduced margin to align with form spacing */
+    max-width: 500px;
+}
